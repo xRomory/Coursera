@@ -56,10 +56,9 @@ h1 {
 .menu {
     border: 1px solid black;
     background-color: #367950;
-    width: 90%;
     height: 200px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
