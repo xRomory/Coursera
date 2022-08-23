@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Solution for Module 2</title>
+    <style>
+
+        /* Reset Box Sizing */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Global Style */
+
+        /* Larger Device */
+        @media (min-width: 992px) {
+            .chick-lg-3,
+            .beef-lg-3,
+            .sushi-lg-3 {
+                float: left;
+                width: 33.33%;
+            }
+        }
+
+        /* Tablet Devices */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .chick-md-3,
+            .beef-md-3,
+            .sushi-md-3 {
+                float: left;
+                border: 1px solid green;
+            }
+            .chick-md-3,
+            .beef-md-3 {
+                width: 50%;
+            }
+            .sushi-md-3 {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            font-family: 'Tahoma', 'Verdana', sans-serif;
+            background-color: rgb(193, 233, 193);
+        }
+
+        h1 {
+            margin: 40px;
+            text-align: center;
+        }
+
+        /* Base style */
+        #container {
+            width: 100%;
+        }
+
+        .menu {
+            border: 2px solid black;
+            background-color: #367950;
+            width: 90%;
+            height: 200px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chicken,
+        .beef,
+        .sushi {
+            width: 100px;
+            height: 25px;
+            position: absolute;
+            right: 0;
+        }
+
+        .chicken {
+            background-color: #baf3b5;
+        }
+
+        .beef {
+            background-color: #a4fcf7;
+        }
+
+        .sushi {
+            background-color: #edf3b5;
+        }
+
+        p {
+            font-size: 15px;
+            margin: 0;
+            text-align: center;
+        }
+        .label {
+            font-weight: bold;
+        }
+
+        .dummy-text {
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Our Menu</h1>
+    <div id="container">
+        <section class="chick-lg-3 chick-md-3">
+            <div class="menu">
+                <div class="chicken"><p class="label">Chicken</p></div>
+                <p class="dummy-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor neque fringilla turpis tincidunt, ac congue justo rhoncus. Nulla facilisi. Ut vel rhoncus tortor. Maecenas quis felis nec elit venenatis sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed eu malesuada nibh. Nulla maximus massa ipsum, in ullamcorper eros pulvinar eget. Aenean blandit ipsum dignissim arcu accumsan, et finibus ex cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis dui at mauris accumsan pharetra. Vivamus sed purus sed leo placerat blandit. Curabitur porta diam massa, in suscipit neque suscipit nec. Nulla sollicitudin fringilla metus, sed commodo justo mollis ut.</p>
+            </div>
+        </section>
+        <section class="beef-lg-3 beef-md-3">
+            <div class="menu">
+                <div class="beef"><p class="label">Beef</p></div>
+                <p class="dummy-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor neque fringilla turpis tincidunt, ac congue justo rhoncus. Nulla facilisi. Ut vel rhoncus tortor. Maecenas quis felis nec elit venenatis sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed eu malesuada nibh. Nulla maximus massa ipsum, in ullamcorper eros pulvinar eget. Aenean blandit ipsum dignissim arcu accumsan, et finibus ex cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis dui at mauris accumsan pharetra. Vivamus sed purus sed leo placerat blandit. Curabitur porta diam massa, in suscipit neque suscipit nec. Nulla sollicitudin fringilla metus, sed commodo justo mollis ut.</p>
+            </div>
+        </section>
+        <section class="sushi-lg-3 sushi-md-3">
+            <div class="menu">
+                <div class="sushi"><p class="label">Sushi</p></div>
+                <p class="dummy-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor neque fringilla turpis tincidunt, ac congue justo rhoncus. Nulla facilisi. Ut vel rhoncus tortor. Maecenas quis felis nec elit venenatis sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed eu malesuada nibh. Nulla maximus massa ipsum, in ullamcorper eros pulvinar eget. Aenean blandit ipsum dignissim arcu accumsan, et finibus ex cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis dui at mauris accumsan pharetra. Vivamus sed purus sed leo placerat blandit. Curabitur porta diam massa, in suscipit neque suscipit nec. Nulla sollicitudin fringilla metus, sed commodo justo mollis ut. Vestibulum at sapien luctus neque sollicitudin vestibulum vel tristique lacus. Aenean lacus nisl, scelerisque sit amet tristique quis, posuere id felis. Aenean molestie scelerisque neque, faucibus aliquet erat. Donec ultricies ipsum nec nibh tristique gravida. Phasellus eget vehicula neque, quis ultrices risus. Donec cursus ullamcorper massa in pulvinar. Nullam tempus massa diam, at finibus dui placerat vitae. Curabitur nunc dui, commodo at tristique eget, tempor eu sapien. Morbi quam massa, pretium in dui ut, porta sodales nulla. Maecenas aliquam dictum dapibus. Donec eu fermentum sapien.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
